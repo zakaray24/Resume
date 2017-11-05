@@ -1,4 +1,4 @@
-e resume.cls style
+% Use resume.cls style
 \documentclass{resume}
 
 %------------------------------------------------------------------------------
@@ -11,16 +11,6 @@ e resume.cls style
 \contact{(208)~$\cdot$~284~$\cdot$~8789 \\ zachpriest@u.boisestate.edu}
 \begin{document}
 
-%------------------------------------------------------------------------------
-%	Objective section
-%------------------------------------------------------------------------------
-
-\begin{rSection}{Objective}
-
-Looking for internship opportunities to work as a software developer where in my knowledge \& skills are tested. 
-Areas of interest include Cyber Security, Web Development \& Databases.
-
-\end{rSection}
 
 %------------------------------------------------------------------------------
 %	Education section
@@ -28,40 +18,39 @@ Areas of interest include Cyber Security, Web Development \& Databases.
 
 \begin{rSection}{Education}
 
-{\bf Boise State University} \hfill {\em est. May 2018}\\
+{\bf Boise State University} \hfill {\em est. July 2018}\\
 Bachelor of Science, Computer Science \hfill {\em Major GPA: ~3.0}\\
-Cyber Security Emphasis\\ 
+\emph{Cyber Security Emphasis} \hfill {\em https://github.com/zakaray24}\\
+
 \end{rSection}
+
+
+%------------------------------------------------------------------------------
+%	Coursework section
+%------------------------------------------------------------------------------
+
 
 %------------------------------------------------------------------------------
 %	Coursework section
 %------------------------------------------------------------------------------
 \begin{rSection}{Relevant Coursework}
 
-Software Engineering, Databases, Web Development, Data Structures, Algorithms ,
+Software Engineering, Databases, Web Development, Data Structures, Algorithms,
  Ethical Hacking, Computer Security \& Info. Insurance, Network Security \& Defense, Programming Languages
 
 \end{rSection}
 
-%------------------------------------------------------------------------------
-%	Work experience section
-%------------------------------------------------------------------------------
 
-\begin{rSection}{Work History}
+%----------------------------------------------------
+%	Relevant Skills & Abilities
+%----------------------------------------------------
 
-\begin{rSubsection}{Hampton Inn \& Suites}
-{Jan. 2013 - present}{Night Audit/Front Desk Manager}{Meridian, Idaho}
-\item Participate in scheduling, hiring and training of the front desk staff. 
-\item Provide financial reporting for a hotel that brings in roughly \$5 million annually.
-\item Balance A/R, A/P, reconciliations, direct bills, house accounts, EDC transmittal.
-\item Ability to create solutions quickly to various issues/complaints of both guests and employees. 
-\end{rSubsection}
+\begin{rSection}{Relevant Skills \& Abilities}
 
-\begin{rSubsection}{Boise State University}
-{Jan. 2017 - May 2017}{Research Assistant - Cyber Security}{Boise, Idaho}
-\item Participated in HackerOne bug-bounty program, focusing mainly on XSS and its variants.
-\item Developed documentation weekly on my progression and observations of other hunter's disclosures.
-\end{rSubsection}  
+ General understanding of object oriented design patterns and data structures\par
+ Learning software development in a UNIX based environment, version control via Git\par
+ Use of Bootstrap, PHP, HTML, CSS, JSON/XML, SQL prepared statements, POM dependencies\par
+ Working with AWS - EBS / RDS / CLI / IAM security credentials / various deployment processes
 
 \end{rSection}
 
@@ -70,38 +59,47 @@ Software Engineering, Databases, Web Development, Data Structures, Algorithms ,
 %----------------------------------------------------
 \begin{rSection}{Current Projects}
 
-\begin{rSubsection}{Interfaith Sanctuary Donation Application}
-{Status: Unfinished}{https://github.com/BoiseState/CS471-S17-RedStar}{}
-\item Links with Amazon wishlist, allows purchasing through a link which redirects to Amazon.
-\item Contributions: Backend - admin website and postgresql database.
-\item Software used: Maven/Spark/Java/PHP/Bootstrap/Cordova/Ionic.
-\end{rSubsection}
+\begin{rSubsection}{Interfaith Sanctuary Donation Management Application}
+{Status: In Progress}{https://github.com/BoiseState/CS471-S17-RedStar}{}
+\item Participated in migration from embedded Jetty to a more RESTful approach in a Tomcat container.
+\item Worked closely with Interfaith to set up their AWS account for our production environment.
+\item Leading deployment from our local environments to dev/production environments on AWS.
+\item Software/Libraries used: Maven/Tomcat/Java/JQuery/Jax-RS/Jersey/Cordova/Ionic.
+\item Contributions: Backend - Admin website \& endpoints pulling from a Postgresql database. 
+\item This project will be open source under GNU GPL v2
 
-\begin{rSubsection}{Point of Sale WebApp for Inntrusted}
-{Status: Unfinished}{https://github.com/zakaray24/Inntrusted\_PoS}{}
-\item Developing a Point of Sale WebApp for my current employer's Suite Shop Sales.
-\item Software used: Python/PHP and Django Web Framework.
 \end{rSubsection}
 
 \end{rSection}
 
-%----------------------------------------------------
-%	Relevent Skills & Abilities
-%----------------------------------------------------
 
-\begin{rSection}{Relevent Skills \& Abilities}
- 	
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Software \& OS &
-    Git, Eclipse, IntelliJ, Burpe Suite, OS X, Windows, UNIX, Kali\\
-Web Dev. \& Databases & 
-    php, html, css, bootstrap, javascript, postrgesql, mssql, mysql\\
+%------------------------------------------------------------------------------
+%	Work experience section
+%------------------------------------------------------------------------------
 
-\end{tabular}
+\begin{rSection}{Work History}
+
+\begin{rSubsection}{Boise State University}
+{Jan. 2017 - May 2017}{Research Assistant - Cyber Security}{Boise, Idaho}
+\item Participated in HackerOne's bug-bounty program, focusing mainly on Cross-Site Scripting.
+\item Developed documentation weekly on my progression when attempting
+my own disclosures.
+\item Most research was done through observations of other hunter's public disclosures on HackerOne.
+\item Created a line of communication between a number of bounty participants. 
+\item Tools used: XSScrapy, MiTMproxy, Burp Suite, VPN(s), OWASP Mantra OS, Kali Linux, \LaTeX{}
+
+\end{rSubsection}  
+
+\begin{rSubsection}{Hampton Inn \& Suites}
+{Jan. 2013 - present}{Night Audit/Front Desk Manager}{Meridian, Idaho}
+\item Provide financial reporting for a hotel that brings in roughly \$4.5 million annually.
+\item Balance A/R, A/P, reconciliations, direct bills, house accounts, EDC transmittal.
+\item Ability to create solutions quickly to various issues/complaints of both guests and employees. 
+\item Developed detailed documentation on Night Audit procedures and other training materials.
+\end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------
 
 \end{document}
-
